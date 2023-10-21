@@ -1,0 +1,121 @@
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5ddd5;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.settings-tray {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.settings-tray--right i.material-icons {
+    margin-left: 15px;
+    color: #009688;
+    cursor: pointer;
+}
+
+.search-box {
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.input-group {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.input-group-text {
+    border: none;
+    background-color: transparent;
+}
+
+.friend-drawer {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.friend-drawer--onhover:hover {
+    background-color: #ebebeb;
+}
+span.settings-tray--right {
+    margin-left: 143px;
+}
+.friend-drawer--grey {
+    background-color: #f6f6f6;
+    width: 100%;
+}
+
+.friend-drawer .text {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.text-muted {
+    color: #9e9e9e;
+}
+
+.chat-panel {
+    background-color: #ffffff;
+    padding: 20px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.chat-bubble {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #dcf8c6;
+    display: inline-block;
+    /* max-width: 70%; */
+}
+
+.chat-bubble--left {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.chat-box-tray {
+    background-color: #f6f6f6;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.chat-box-tray i.material-icons {
+    margin-right: 10px;
+    color: #009688;
+    cursor: pointer;
+}
+
+.form-control {
+    border-radius: 25px;
+    padding-left: 15px;
+    border: 1px solid #e0e0e0;
+    flex: 1;
+}

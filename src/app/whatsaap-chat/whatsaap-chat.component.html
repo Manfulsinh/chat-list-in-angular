@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-5 border-right">
+        <div class="settings-tray">
+          <img class="profile-image" src="assets/ms.jpeg" alt="">
+          <span class="settings-tray--right" style="margin-left: 100pxpx;">
+            <i class="material-icons">cached</i>
+            <i class="material-icons">message</i>
+            <i class="material-icons">menu</i>
+          </span>
+        </div>
+        <div class="search-box">
+          <div class="input-group"> 
+            <div class="input-group-prepend"> 
+              <span class="input-group-text"><i class="material-icons">search</i></span>
+            </div>
+            <input class="form-control" placeholder="Search here" type="text"> <!-- Added Bootstrap class "form-control" -->
+          </div>
+        </div>
+        <div class="friend-drawer friend-drawer--onhover" *ngFor="let friend of friends">
+          <img class="profile-image" [src]="friend.imageUrl" alt="">
+          <div class="text">
+            <h6>{{ friend.name }}</h6>
+            <p class="text-muted">{{ friend.message }}</p>
+          </div>
+          <span class="time text-muted small">{{ friend.time }}</span>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="settings-tray">
+          <div class="friend-drawer no-gutters friend-drawer--grey">
+            <img class="profile-image" src="assets/ms.jpeg" alt="">
+            <div class="text">
+              <h6>manful</h6>
+      
+            </div>
+            <span class="settings-tray--right">
+              <i class="material-icons">cached</i>
+              <i class="material-icons">message</i>
+              <i class="material-icons">menu</i>
+            </span>
+          </div>
+        </div>
+        <div class="chat-panel">
+          <div class="row no-gutters" *ngFor="let message of chatMessages">
+            <div class="col-md-5">
+              <div class="chat-bubble chat-bubble--left">
+                {{ message }}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="chat-box-tray">
+                <i class="material-icons">sentiment_very_satisfied</i>
+                <input [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" class="form-control" type="text" placeholder="Type your message here"> <!-- Added Bootstrap class "form-control" -->
+                <i class="material-icons">mic</i>
+                <i class="material-icons" (click)="sendMessage()">send</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
